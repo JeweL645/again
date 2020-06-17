@@ -1,0 +1,12 @@
+favourite_numbers = {  # A dictionary of favourite numbers
+    'ria': [3, 4],
+    'mithso': [22, 4],
+    'samiul': [25, 4],
+    'bristy': [88, 69],
+    'sobuz': [69, 22],
+}
+
+for fav_num in favourite_numbers:  # looping through a dictionarie
+    print(fav_num + "'s favourite number is " + str(favourite_numbers[fav_num]))
+print(type(favourite_numbers[fav_num]))
+print()
