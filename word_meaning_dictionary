@@ -1,0 +1,8 @@
+words = {
+    'if': 'when we think critically',
+    'else': 'when you got no option',
+    'elif': 'when thers is another option',
+}
+
+for worrds in words:
+    print(worrds + ": \n\t" + words[worrds])
