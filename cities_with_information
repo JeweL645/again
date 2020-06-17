@@ -1,0 +1,22 @@
+cities = {  # A dictionary called cities
+    'dhaka': {  # dictionary of key word
+        'country_name': 'bangladesh',
+        'population': '8906000',
+        'fact': 'most populated city',
+    },
+    'delhi': {  # dictionary of key word
+        'country_name': 'india',
+        'population': '11000000',
+        'fact': 'second most populated city',
+    },
+    'jakarta': {  # dictionary of key word
+        'country_name': 'indonesia',
+        'population': '96080000',
+        'fact': 'largest city of indonesia',
+    },
+}
+for city, city_info in cities.items():  # this loop is for the cities dictionary
+    print('\n' + "City: " + city.title())  # this print() method to print the keys of the cities dictinary
+    for k, v in city_info.items():  # this loop is for the values of cities dictionary
+        print(
+            k + ":" + " " + v)  # this print() method is actually printing the values of inside dictionary and it is printing the key and value in the same line
