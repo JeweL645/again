@@ -1,0 +1,10 @@
+prompt = "Tell me something and I'm gonna give it back to you."
+prompt += "You can say anything to me don't worry: "
+
+flag = True              #initializing the flag value as true
+while flag == True:
+    message = input(prompt)
+    if message.lower() != 'quit':
+        print(message)
+    elif message.lower() == 'quit':
+        flag = False              #if user wants quit the program then flag value will change to false and the while loop will be stop
