@@ -1,0 +1,28 @@
+prompt = "Tell us your age for ticket purposes."
+prompt += "We charge the rate based on your age: "
+flag = True
+age = ""                       #this is empty string to help python to check
+
+while flag:
+    age = int(input(prompt))
+    if age < 3:
+        print("You don't need to buy any ticket !")
+        ask = input("Do you want to buy more? ")
+        if ask.lower() == 'no':
+            flag = False
+        else:
+            continue
+    elif 3 <= age <= 12:
+        print("You need to pay 10$ for your ticket !")
+        ask = input("Do you want to buy more? ")
+        if ask.lower() == 'no':
+            flag = False
+        else:
+            continue
+    elif age > 12:
+        print("You need to pay 15$ for your ticket !")
+        ask = input("Do you want to buy more? ")
+        if ask.lower() == 'no':
+            flag = False
+        else:
+            continue
