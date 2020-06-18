@@ -1,0 +1,37 @@
+billu = {
+    'animal': 'cat',
+    'color': 'grey-black',
+    'behavior': 'unstoppable',
+    'owner': 'nadia',
+}
+phantom = {
+    'animal': 'dog',
+    'color': 'darkish-yellow-black',
+    'behavior': 'furious',
+    'owner': 'sourav',
+}
+biscuit = {
+    'animal': 'bird',
+    'color': 'white',
+    'behavior': 'noisy',
+    'owner': 'elias',
+}
+mr_rudie = {
+    'animal': 'fish',
+    'color': 'blue-red-black',
+    'behavior': 'angry',
+    'owner': 'julu',
+}
+hissh = {
+    'animal': 'snake',
+    'color': 'green',
+    'behavior': 'silent-killer',
+    'owner': 'bornav',
+}
+pets = [billu, phantom, biscuit, mr_rudie, hissh]
+for pet in pets:
+    print("It's a "+pet['animal'].title())
+    print("It's color is "+pet['color'].title())
+    print("It is very "+pet['behavior'])
+    print("My frind "+pet['owner'].title()+" takes care of it and loves a lot!")
+    print()
