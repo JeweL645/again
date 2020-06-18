@@ -1,0 +1,9 @@
+prompt = "Enter the topping that you want to add to your pizza."
+prompt += "We will try to add as you want to: "
+
+topping = ""             #letting this empty to check python and compare to the quit string
+
+while topping.lower() != 'quit':
+    topping = input(prompt)
+    if topping.lower() != 'quit':
+        print("You are adding " + topping.title() + " to your pizza!")
