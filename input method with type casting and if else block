@@ -1,0 +1,11 @@
+prompt = "If you tell us who you are then we can manage the proccedure for you."
+prompt += "\nTell us your first name? "
+name = input(prompt)
+print("Hello, "+name.title()+"!")
+
+height = input('How tall are you(in inches): ')
+height = int(height)                               #when you use user input as numerical purposes just make sure that you casted the type into integer
+if height >= 36:
+    print("You are tall enough to ride.")
+else:
+    print("Sorry, "+name.title()+"."+"You'll be able to ride when you get little older.")
