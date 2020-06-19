@@ -1,0 +1,11 @@
+
+prompt = "Tell us the name of the cities that you have visited."
+prompt += "\nEnter quit when you want to stop the program: "
+
+while True:                        #if a while loop starts with True then it will run forever untill it finds a break statements
+    city = input(prompt)
+
+    if city.lower() == 'quit':
+        break
+    else:
+        print("I would love to go "+city.title()+" again!")
