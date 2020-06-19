@@ -1,0 +1,12 @@
+
+unconfirmed_users = ['alice', 'steven', 'stanley', 'harry', 'taylor']
+confirmed_users = []
+
+while unconfirmed_users:       #when unconfirmed_users turned into an empty one the statement will become False
+    current_user = unconfirmed_users.pop()
+    print("Verryfing user: "+current_user.title())
+    confirmed_users.append(current_user)
+print()
+print("The following users is being veryfied as confirmed user: ")
+for confirmed_user in confirmed_users:
+    print(confirmed_user.title())
