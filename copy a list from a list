@@ -1,0 +1,12 @@
+#You can copy a list from a list by using while loop
+
+old_frined = ['samiul', 'joy', 'abid', 'rahi','nahid']
+forever_friend = []
+
+while old_frined:                #A list is equivalent to True when it is compared in conditional statement, and an empty list False
+    poped_item = old_frined.pop()
+    forever_friend.append(poped_item)
+    print(poped_item+" added to your forever friend list.")
+
+real_friend = forever_friend[:]        #You can actually copy a list with advance slicing, it is the example
+print(real_friend)
