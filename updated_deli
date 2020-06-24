@@ -1,0 +1,18 @@
+sandwitch_orders = ['pastrami', 'sub', 'club', 'pastrami', 'sub-marine', 'dagwood', 'pastrami',
+                    'hero']  # filling list with given values
+
+finished_sandwitches = []  # daclaring an empty list
+
+print("Sorry, The Pastrami sandwitch is unavailable!!")
+print()
+while 'pastrami' in sandwitch_orders:
+    sandwitch_orders.remove('pastrami')
+
+for sandwitch_order in sandwitch_orders:  # looping through the sandwitch list
+    print(sandwitch_order + " sandwitch is ready! ")
+    finished_sandwitches.append(sandwitch_order)  # adding to the empty list
+
+print()
+print("\t---Finished_sandwitch---")
+for finished_sandwitch in finished_sandwitches:  # looping to the empty list when it becomes a value existing list
+    print(finished_sandwitch + " sandwitch!")
