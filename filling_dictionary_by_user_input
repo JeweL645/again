@@ -1,0 +1,14 @@
+
+responses = {}                                      #declaring an empty dictionary
+polling_status = True
+
+while polling_status:                               #this statement is True as the polling status is True
+    prompt = "What is your name?"
+    name = input(prompt)
+    prompt = "What is the next place you want to visit after the lockdown?"
+    reaction = input(prompt)
+    responses[name] = reaction                      #here neme is the key and reaction is the value of the dictionary by user given data
+    prompt = "Do you want anyone to join the poll?(Yes/No)"    #asking for the while loop continue permission
+    repeat = input(prompt)
+    if repeat.lower() == 'no':                      #If this statement becomes true the while will break
+        polling_status = False
