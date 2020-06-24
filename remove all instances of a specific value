@@ -1,0 +1,8 @@
+
+pets = ['cat', 'dogs', 'horse', 'dogs', 'elephant', 'dogs']
+print(pets)
+
+while 'dogs' in pets:         #this is equivalent as True, so the while loop will continue till it removes all the 'dogs'
+    pets.remove('dogs')
+
+print(pets)
