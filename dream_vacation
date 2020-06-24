@@ -1,0 +1,17 @@
+
+active_status = True
+
+poll = {}           #declaring an empty list
+while active_status:
+    prompt = "What is your name? "
+    name = input(prompt)
+    prompt = "What is your dream destination where you want to go in your life once: "
+    places = input(prompt)
+    poll[name] = places            #filling the dictionary with user given information
+    prompt = "Do you want anyone to join this poll?(Yes/No)"             #asking for to continue the while loop
+    repeat = input(prompt)
+    if repeat.lower() == 'no':
+        active_status = False
+
+for name, place in poll.items():              #block of printing the dictionary after assigning values to it
+    print(name+": "+place)                    #printing the key value pairs in single line
