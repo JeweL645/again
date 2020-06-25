@@ -1,0 +1,18 @@
+def make_shirt(size='Large', text='I love python'):  # An example of default value of functions!
+    print("\nThe shirt is going to be '" + size + "' size!")
+    print("'" + text + "' -this message going to be written on the shirt!")
+
+
+make_shirt()
+make_shirt(size='Medium')  # Calling the function with a default message
+make_shirt(text='Aapna time aayega!', size='Fit', )  # Calling the function with keyword arguments
+print()
+
+
+def describe_city(city_name, country_name='Bangladesh'):  # Calling the function with a single default value
+    print(city_name.title() + " is in " + country_name)
+
+
+describe_city('ctg')
+describe_city('dhaka')
+describe_city('maijdee')
