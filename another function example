@@ -1,0 +1,17 @@
+def getting_a_formatted_name(first_name, last_name):  # this function returns a value
+    """Returning a formatted name neatly"""
+    full_name = first_name + " " + last_name  # in this line the parameters are being concated
+    return full_name.title()  # returning value line
+
+
+ria = getting_a_formatted_name('faria', 'parvez')  # calling the function with the use of a variable as it is a returning value function
+print(ria)
+
+
+def getting_a_formatted_name(first_name, last_name):  # the same function without returning the value
+    """Returning a formatted name neatly"""
+    full_name = first_name + " " + last_name
+    print(full_name.title())  # the full name is being printed here
+
+
+getting_a_formatted_name('elias', 'islam')  # calling the function with the positional argument
