@@ -1,0 +1,9 @@
+
+def building_a_person(first_name, last_name, age=''):    #age is here an empty default value
+    person = {'first': first_name, 'last': last_name}
+    if age:
+        person['age'] = age
+    return person
+
+user1 = building_a_person('yeasin','arafat',8)
+print(user1)
