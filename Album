@@ -1,0 +1,21 @@
+def make_album(album_title,artist_name, track_num = ''):        #here is an optional parameter named 'track_num'
+    """Building a dictionary describing a music album"""
+
+    album = {"Album_title": album_title,                        #creating the dictionary without the optional parameter
+             "Artist_name": artist_name,
+             }
+    if track_num:                                               # if this statement becomes true then a dictionary will be made with the optional parameter
+        album = {"Album_title": album_title,
+                 "Artist_name": artist_name,
+                 "Track_num": track_num,
+                 }
+    return album                                                #returning the album either with track_num or without the optional parameter
+
+
+
+first = make_album('ke bole', 'tanzir shuddho')                 #calling the function without the optional parameter
+print(first)
+second = make_album('doorie', 'atif aslam')
+print(second)
+third = make_album('kobita','james', 12)                        #calling the function with the optional parameter
+print(third)
