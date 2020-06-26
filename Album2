@@ -1,0 +1,20 @@
+
+def making_album(album_name, artist_name):
+    Album = {'Album-Name': album_name,
+             'Artist-Name': artist_name,
+             }
+    return Album                                       #Returning the dictionary
+
+print("(Enter 'q' anytime to quit)")                   #A message to the user that they can quit anytime
+while True:                                            #This loop will continue till user didn't press 'q'
+    prompt = "Tell us the Album title: "
+    al_title = input(prompt)
+    if al_title.lower() == 'q':
+        break
+    prompt = "Tell us the Artist name: "
+    ar_name = input(prompt)
+    if ar_name.lower() == 'q':
+        break
+
+    calling = making_album(al_title,ar_name)           #Calling the function with the user given information
+    print(calling)
