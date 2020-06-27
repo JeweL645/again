@@ -1,0 +1,21 @@
+
+def under_construction(raw_designs, completed_models):
+    while raw_designs:
+        current_design = raw_designs.pop()
+        print("Printing model: "+ current_design)
+        completed_models.append(current_design)
+
+
+
+def final_model(completed_models):
+    print("The following models have been printed: ")
+    for completed_model in completed_models:
+        print(completed_model)
+
+
+raw_designs = ['i phone', 'galaxy a3', 'note 8 pro']
+completed_models = []
+
+under_construction(raw_designs, completed_models)
+print()
+final_model(completed_models)
