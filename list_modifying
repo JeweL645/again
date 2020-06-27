@@ -1,0 +1,18 @@
+
+def show_magicians(name_list):         #defining the function to simply print the names of the magicians
+    for name in name_list:
+        print(name.title())
+
+
+def make_great(list_name1,list_name2):      #defining the function to modify the list
+    while list_name1:
+        current_magician = "the Great " + list_name1.pop() + "!"         # in this line each and every element is changing
+        list_name2.append(current_magician)                              # in this line the changed element appending to the another list (modifing)
+    show_magicians(list_name2)                                           # calling the first function again to check whether the list actually changed or not
+
+magicians_names = ['steven','curry','roger','federer','mike']
+great_magicians = []
+show_magicians(magicians_names)
+print()
+make_great(magicians_names, great_magicians)                             #calling the second function
+print(magicians_names) 
