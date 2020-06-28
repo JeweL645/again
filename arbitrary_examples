@@ -1,0 +1,11 @@
+
+def makiing_profile(first, last, **user_info):       #here this **user_info have no idea what kind of dara its going to receivebut to accecpt we use this double star
+    """Building a user dictionary"""
+    user = {}
+    user['First_name']=first.title()
+    user['Last_name']=last.title()
+    for key, value in user_info.items():
+        user[key] = value.title()
+    return user
+people = makiing_profile('elias', 'islam', location = 'uk', profession = 'data scientist')
+print(people)
