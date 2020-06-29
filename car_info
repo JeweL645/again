@@ -1,0 +1,10 @@
+def car(manufacturer_name, model_name, **car_info):
+    """Details of a car user given information"""
+    car = {}
+    car['Manufacturer']= manufacturer_name.title()
+    car['Model'] = model_name.title()
+    for key, value in car_info.items():
+        car[key] = value.title()
+    return car
+car1 =  car('land rover', 'range rover l405', color = 'black', type = 'suv', wheel_type = '4w')
+print(car1)
