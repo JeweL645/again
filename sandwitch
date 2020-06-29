@@ -1,0 +1,12 @@
+
+def making_sandwitch(names):
+    print("We are going to add these things to your sandwitch: ")
+    for name in names:
+        print(name)
+    print("your sandwitch is done with the printed items!")
+
+names = ['chesse']
+making_sandwitch(names)
+print()
+names = ['mushrooms', 'lotus', 'chilli mix']
+making_sandwitch(names)
