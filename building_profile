@@ -1,0 +1,11 @@
+def user_profile(first, last, **user_info):
+    """Creating my own profile"""
+    user = {}
+    user['First'] = first.title()
+    user['Last'] = last.title()
+    for key, value in user_info.items():
+        user[key] = value.title()
+    return user
+
+make_profile = user_profile('elias', 'islam', tone = 'brown', profession = 'data scientist', hobby = 'coding')
+print(make_profile)
